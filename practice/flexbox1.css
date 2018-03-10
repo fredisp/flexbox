@@ -1,0 +1,30 @@
+* {
+    margin: 10px 20px;
+}
+p{
+    margin: 20px 40px ;
+}
+.ul1{
+    display:flex;
+    border:1px solid blue;
+ /*   flex-direction: row;/!*排列方向*!/
+    flex-wrap: wrap;/!*流向*!/*/
+    flex-flow:row wrap;
+    justify-content: space-around;/*对其方式*/
+
+}
+.li1{
+    width: 100px;
+    height:100px;
+    background-color:red;
+    margin:16px;
+}
+.ul2{
+    display:flex;
+    border:1px solid blue;
+    /*   flex-direction: row;/!*排列方向*!/
+       flex-wrap: wrap;/!*流向*!/*/
+    flex-flow:row wrap;
+    justify-content: space-around;/*对其方式*/
+
+}
