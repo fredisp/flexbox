@@ -1,0 +1,34 @@
+html,body{
+    height:100%;
+}
+body{
+    display:flex;/*激活flex能力*/
+    flex-direction:column;/*垂直而不是水平对方弹性项目（主栏目和脚注元素*/
+    background-color: #fff;
+    margin: 0;
+    font-family: Lato,sans-serif;
+    color:#222;
+    font-size: 0.9em;
+}
+main{
+    flex: 1 0 auto;/*填满剩余空间*/
+    display: flex;/*弹性容器 带有弹性项目 侧边栏着主内容*/
+}
+footer{
+    flex:0 0 90px;/*不会放大或者收缩 只会固定在90px高度*/
+    padding: 10px;
+    color:#fff;
+    background-color: rgba(61,100,158,9);
+}
+aside{
+   flex:0 0 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    align-items: center;
+    background-color: #f2f2f2;
+}
+aside i.fa{
+    font-size: 0.9em;
+}
