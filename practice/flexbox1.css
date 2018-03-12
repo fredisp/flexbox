@@ -4,6 +4,9 @@
 p{
     margin: 20px 40px ;
 }
+li{
+    list-style: none;
+}
 .ul1{
     display:flex;
     border:1px solid blue;
@@ -26,5 +29,127 @@ p{
        flex-wrap: wrap;/!*流向*!/*/
     flex-flow:row wrap;
     justify-content: space-around;/*对其方式*/
+    align-items:baseline;
+    /* flex-start Cross-Axis开始边缘顶部对齐
+    \\flex=end Cross-Axis结束边缘（底部对其）
+     \\center Cross-Axis中间（居中对齐）
+     \\stretch flex项目和flex容器高度一样
+     \\baseline flex项目在Cross-Axis上沿着他们自己的基线对其*/
+}
+.list1{
+    height: auto;
+    width: 200px;
+    background-color: antiquewhite;
+}
+.list2{
+    height: auto;
+    width: 200px;
+    background-color: bisque;
+    font-size: 1em;
+}
+.list3{
+    height: auto;
+    width: 200px;
+    background-color: bisque;
+    font-size: 2em;
+}
+.list4{
+    height: auto;
+    width: 200px;
+    background-color: bisque;
+    font-size: 3em;
+}
+.ul-align-content{
+    display: flex;
+    border: 1px solid blue;
+    flex-flow: row wrap;
+    align-content: flex-start;/**
+    stretch 拉伸flex项目 让他们沿着cross-Axis适应Flex容器可用的空间
+    flex-start 靠Cross-Axis。沿着Cross-Axis从上到下排列。顶部对齐
+    flex-end 与flex-start 相反
+    center 在flex容器中居中对齐
+    */
 
+}
+.ul-align-content li{
+    width: 300px;
+    font-size: 2em;
+    background-color: bisque;
+    height: 100px;
+}
+.ul-align-content li:first-child{
+  font-size: 1em;
+}
+.ul-flexp{
+    display: flex;
+    flex-flow: row wrap;
+    border: 1px solid red;
+}
+.ul-flexp li{
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+}
+.ul-flexp li:nth-child(1){
+    order: 3;
+}
+.ul-flexp li:nth-child(2){
+    order: 2;
+}.ul-flexp li:nth-child(3){
+     order: 1;
+ }
+.ul-flexp li:nth-child(4){
+      order: 6;
+  }
+.ul-flex-frow  {
+    display: flex;
+    flex-flow: row wrap;
+    border: 1px solid coral;
+    height: 200px;
+
+}
+.ul-flex-frow li{
+    background-color: blue;
+   /* flex-grow: 0;/!*宽度填充*!/
+    flex-shrink:1;/!*是否随着容器变化开关 默认为1变化*!/
+    flex-basis: 330px;/!*初始大小*!/*/
+    flex:0 1 auto;
+}
+.ul-flexgsb{
+    display: flex;
+    border: 1px solid red;
+}
+.ul-flexgsb li:nth-child(1){
+    flex:1 1 0;
+    background-color: gold;
+    height: 110px;
+}
+.ul-flexgsb li:nth-child(2){
+    flex:2 1 0;
+    background-color: gold;
+    height: 110px;
+}
+.ul-align-self{
+    display: flex;
+    border: 1px solid red;
+    padding: 0;
+    list-style: none;
+    justify-content:space-between;
+    align-items: flex-start; /* 影响所有弹性项目 */
+
+    background-color: #e8e8e9;
+    height: 200px;
+
+}
+.ul-align-self li {
+    width: 100px;
+    background-color: #8cacea;
+    margin: 8px;
+    font-size: 2rem;
+}
+.ul-align-self li:first-of-type {
+    align-self:flex-end ;
+    /*
+    flex-start | | flex-end | | center | | baseline | | stretch
+    */
 }
