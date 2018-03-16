@@ -163,3 +163,40 @@ li{
     border :2px solid red ;
     margin:2em;
 }
+.ulForAutoMar{
+    display:flex;
+    border: 1px solid red;
+}
+.liForAutoMar{
+    flex:0 0 auto;
+    border: 1px solid red;
+    background-color:yellow;
+}
+.liForAutoMar:nth-child(1){
+    /*margin-right: auto;*/
+    margin: auto;
+    /*justify-content: flex-end; 当margin开始使用的时候justify-content失效*/
+}
+.ulForBootstrap{
+    display: flex;
+    height: 50px;
+    border: 1px solid red;
+    padding: 0 10%;
+    text-align: center;
+    line-height: 35px;
+    overflow: hidden;
+}
+.liForBootstrap{
+    text-emphasis-color: white;
+   color: #5C4283;
+    margin: 0;
+    padding: 5px 10px ;
+
+}
+.liForBootstrap:nth-child(8){
+    margin-left: auto;
+}
+.liForBootstrap:hover{
+    background-color: #eeeeee;
+    cursor: pointer;
+}
