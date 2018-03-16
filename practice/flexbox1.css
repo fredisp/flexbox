@@ -153,3 +153,13 @@ li{
     flex-start | | flex-end | | center | | baseline | | stretch
     */
 }
+.ulforxdjd{
+    display:flex;/*触发弹性盒子布局*/
+    border:1px solid red;
+}
+.liforxdjd{
+   /* flex:auto; /!*与flex:1 1 auto ;相同 x相对flex*!/*/
+    flex:1; /*与flex:1 1 0相同 绝对flex;*/
+    border :2px solid red ;
+    margin:2em;
+}
